@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication Page</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="/main.scss">
+
+</head>
+<body>
+    <header class="header">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/Feed.html">Feed</a></li>
+          <li><a href="/Profile.html">Profile</a></li>
+          <!-- Add more navigation links -->
+        </ul>
+      </header>
+      
+  <div class="container">
+    <h1>Login or Register</h1>
+    <section>
+        <img src="/images/8.jpg" alt="">
+    </section>
+    
+    
+    <!-- Login or Register Form -->
+    <form action="/profile" method="post" onsubmit="return validateForm()">
+      <h2>Login</h2>
+      <div>
+        <label for="loginUsername">Username</label>
+        <input type="text" id="loginUsername" name="loginUsername" required>
+      </div>
+      <div>
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" name="loginPassword" minlength="8" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+   
+    <form action="/profile" method="post" onsubmit="return validateForm()">
+      <h2>Register</h2>
+      <div>
+        <label for="registerUsername">Username</label>
+        <input type="text" id="registerUsername" name="registerUsername" required>
+      </div>
+      <div>
+        <label for="registerEmail">Email</label>
+        <input type="email" id="registerEmail" name="registerEmail" required>
+      </div>
+      <div>
+        <label for="registerPassword">Password</label>
+        <input type="password" id="registerPassword" name="registerPassword" minlength="8" required>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+      // Custom validation can be added here if needed
+      return true; // Returning true to submit the form
+    }
+  </script>
+
+<script src="/js/bootstrap.js"></script>
+</body>
+</html>

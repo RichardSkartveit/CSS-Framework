@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed Page</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css"> 
+  <link rel="stylesheet" href="/main.scss">
+</head>
+<body>
+    <header class="header">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/Feed.html">Feed</a></li>
+          <li><a href="/Profile.html">Profile</a></li>
+          <!-- Add more navigation links -->
+        </ul>
+      </header>
+      
+  <div class="container">
+    <img src="/images/1.jpg" alt="1">
+    <h1>Feed</h1>
+    <!-- List of Post Thumbnails -->
+    <div class="post-thumbnails">
+      <!-- Thumbnails go here -->
+    </div>
+    
+    
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </div>
+    
+    <!-- Sort Options -->
+    <div class="sort-options">
+      <!-- Sort options go here -->
+    </div>
+    
+    <!-- Form to Create New Post -->
+    <form action="#" method="post" onsubmit="return validatePostForm()">
+      <h2>Create New Post</h2>
+      <div>
+        <label for="postTitle">Title</label>
+        <input type="text" id="postTitle" name="postTitle" required>
+      </div>
+      <div>
+        <label for="postContent">Content</label>
+        <textarea id="postContent" name="postContent" required></textarea>
+      </div>
+      <button type="submit">Post</button>
+    </form>
+  </div>
+
+  <script>
+    function validatePostForm() {
+      // Custom validation for post form
+      return true; // Returning true to submit the form
+    }
+  </script>
+  <script src="/js/bootstrap.js"></script>
+</body>
+</html>
